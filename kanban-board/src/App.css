@@ -1,0 +1,17 @@
+body {
+  background-color: #0079BF;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+.page-container {
+  display: flex;
+  min-height: 100vh; 
+  flex-direction: column;
+}
+
+.content-container {
+  flex-grow: 1; /* Контент займёт всё свободное пространство */
+  overflow-y: auto; 
+}
