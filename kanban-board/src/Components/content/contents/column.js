@@ -56,7 +56,7 @@ const Column = ({section, data, moveTaskBetweenSections, addTaskToSection}) => {
             <h2>{title}</h2>
             <ul>
                 {
-                    tasks.length > 0 ? (
+                    tasks?.length > 0 ? (
                         tasks.map(task => (
                             <li key={task.id}><Link to={`/tasks/${task.id}`}>{task.name}</Link></li>
                         ))
@@ -130,5 +130,6 @@ const getSourceSection = (data, targetTitle) => {
     }
     return null;
 };
+
 
 export default Column;
